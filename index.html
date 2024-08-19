@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+      integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <title>Home Work 11</title>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-d3b5fc92.css">
+    <title>Homework 11</title>
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-96ed78f5.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-ee21286d.css">
   </head>
   <body>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
+    <form class="search-form">
+      <input
+        class="search-input"
+        type="text"
+        name="searchQuery"
+        placeholder="Search images..."
+      />
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+    <span class="loader hidden"></span>
+    <ul class="gallery"></ul>
+    
   </body>
 </html>
